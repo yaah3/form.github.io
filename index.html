@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>form submit</title>
+</head>
+<body>
+<form method="post" action="php.php">
+  <?php echo $error; ?>
+<table border="5" align="center">
+<tr>
+   <th colspan="2" align="center"> CONTACT ME </th>
+  </tr>
+  <tr>
+     <td colspan="2" ><input type="text" name="name" placeholder="NAME" style="font-size: 16px;"></input></td> 
+  </tr>
+         <tr>
+     
+<td colspan ="2">
+<textarea type="text" name="skill" placeholder="SKILL" cols="55" rows="6" style="font-size: 16px;" ></textarea>
+ </td> 
+
+  </tr>
+ <tr>
+    <td style="font-size: 16px;"> LEVEL </td> 
+<td>
+<select name="level" style="font-size: 16px;" >
+  <option value="proficient">Proficient</option>
+  <option value="intermediate">Intermediate</option>
+  <option value="beginner">Beginner</option>
+  
+</select>
+
+ </td> 
+  </tr>
+  
+  <tr>
+   <td colspan="2" align="center"> <input type="submit" value="submit" class="submit_button"> </td>
+  </tr>
+</table>
+</form>
+
+</body>
+</html>
